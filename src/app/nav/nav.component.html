@@ -22,9 +22,21 @@
       </div>
     </div>
 
-    <form class="d-flex" autocomplete="off">
-      <input name="username" class="form-control me-2" type="text" placeholder="Username" />
-      <input name="password" class="form-control me-2" type="password" placeholder="Password" />
+    <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+      <input
+        [(ngModel)]="model.username"
+        name="username"
+        class="form-control me-2"
+        type="text"
+        placeholder="Username"
+      />
+      <input
+        [(ngModel)]="model.password"
+        name="password"
+        class="form-control me-2"
+        type="password"
+        placeholder="Password"
+      />
       <button class="btn btn-outline-success" type="submit">Login</button>
     </form>
   </div>
