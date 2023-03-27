@@ -11,6 +11,7 @@ import { ServerErrorComponent } from './errors/server-error/server-error.compone
 import { TestErrorComponent } from './errors/test-error/test-error.component';
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
+import { MemberCardComponent } from './members/member-card/member-card.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -25,6 +26,7 @@ import { SharedModule } from './_modules/shared.module';
     AppComponent,
     HomeComponent,
     ListsComponent,
+    MemberCardComponent,
     MemberDetailComponent,
     MemberListComponent,
     MessagesComponent,
