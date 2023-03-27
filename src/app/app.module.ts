@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TestErrorComponent } from './errors/test-error/test-error.component';
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
@@ -25,6 +26,7 @@ import { SharedModule } from './_modules/shared.module';
     MessagesComponent,
     NavComponent,
     RegisterComponent,
+    TestErrorComponent,
   ],
   imports: [
     AppRoutingModule,
