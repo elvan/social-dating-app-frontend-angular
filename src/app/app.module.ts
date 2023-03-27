@@ -17,6 +17,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptor } from './_interceptors/error.interceptor';
+import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 import { SharedModule } from './_modules/shared.module';
 
 @NgModule({
@@ -43,11 +44,8 @@ import { SharedModule } from './_modules/shared.module';
     SharedModule,
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: ErrorInterceptor,
-      multi: true,
-    },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
   ],
   bootstrap: [AppComponent],
 })
