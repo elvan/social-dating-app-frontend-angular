@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,8 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
 import { MessagesComponent } from './messages/messages.component';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
+import { DatePickerComponent } from './_forms/date-picker/date-picker.component';
+import { TextInputComponent } from './_forms/text-input/text-input.component';
 import { ErrorInterceptor } from './_interceptors/error.interceptor';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 import { LoadingInterceptor } from './_interceptors/loading.interceptor';
@@ -27,6 +29,7 @@ import { SharedModule } from './_modules/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
+    DatePickerComponent,
     HomeComponent,
     ListsComponent,
     MemberCardComponent,
@@ -40,6 +43,7 @@ import { SharedModule } from './_modules/shared.module';
     RegisterComponent,
     ServerErrorComponent,
     TestErrorComponent,
+    TextInputComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -48,6 +52,7 @@ import { SharedModule } from './_modules/shared.module';
     CommonModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     SharedModule,
   ],
   providers: [
