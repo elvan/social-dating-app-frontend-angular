@@ -50,6 +50,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootswatch/dist/zephyr/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,7 +93,12 @@
               "browserTarget": "social-dating:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "sslCert": "./ssl/laragon.crt",
+            "sslKey": "./ssl/laragon.key",
+            "ssl": true
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
