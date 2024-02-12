@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+.tab-panel {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.nav-tabs > li.open,
+.member-tabset > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+
+.member-tabset > .nav-tabs > li.open > a,
+.member-tabset > .nav-tabs > li:hover > a {
+  border: 0 !important;
+  color: #333333;
+  background: none !important;
+}
+
+.member-tabset > .nav-tabs > li.open > a > i,
+.member-tabset > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+
+.member-tabset > .nav-tabs > li.open .dropdown-menu,
+.member-tabset > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+.member-tabset > .nav-tabs > li.active {
+  position: relative;
+  border-bottom: 4px solid #e95420;
+}
+
+.member-tabset > .nav-tabs > li.active > a {
+  border: 0 !important;
+  color: #333333;
+}
+
+.member-tabset > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+
+.member-tabset > .tab-content {
+  margin-top: -3px;
+  padding: 15px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: 0px;
+}
+
+.gallery {
+  height: 500px;
+  background-color: white;
+}
