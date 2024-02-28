@@ -27,6 +27,7 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
 import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
@@ -35,6 +36,7 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AdminPanelComponent,
     AppComponent,
+    ConfirmDialogComponent,
     DatePickerComponent,
     HasRoleDirective,
     HomeComponent,
