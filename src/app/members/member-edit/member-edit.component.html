@@ -29,11 +29,11 @@
         </div>
         <div>
           <strong>Last Active:</strong>
-          <p>{{member.lastActive}}</p>
+          <p>{{member.lastActive | timeago}}</p>
         </div>
         <div>
           <strong>Member since:</strong>
-          <p>{{member.created}}</p>
+          <p>{{member.created | date: 'longDate'}}</p>
         </div>
       </div>
       <div class="card-footer">
@@ -64,7 +64,7 @@
             [(ngModel)]="member.introduction"
             rows="6"
           >
-                        </textarea>
+                      </textarea>
           <h4 class="mt-2">Looking for</h4>
           <textarea
             class="form-control"
@@ -72,7 +72,7 @@
             [(ngModel)]="member.lookingFor"
             rows="6"
           >
-                        </textarea>
+                      </textarea>
           <h4 class="mt-2">Interests</h4>
           <textarea
             class="form-control"
@@ -80,7 +80,7 @@
             [(ngModel)]="member.interests"
             rows="6"
           >
-                        </textarea>
+                      </textarea>
 
           <h4 class="mt-2">Location Details</h4>
           <div class="d-flex align-items-center">

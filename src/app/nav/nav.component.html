@@ -53,7 +53,7 @@
         dropdownToggle
         class="dropdown-toggle text-light text-decoration-none"
       >
-        Welcome {{accountService.currentUser()?.username | titlecase}}
+        Welcome {{accountService.currentUser()?.knownAs}}
       </a>
       <div
         *dropdownMenu
